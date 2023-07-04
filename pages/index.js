@@ -1,16 +1,17 @@
-import Head from 'next/head'
-import Image from 'next/image'
 import styles from '../styles/Home.module.css'
-import { Button } from '@mui/material'
+import { Button, Grid, Typography } from '@mui/material'
 import Link from 'next/link'
 
 export default function Home() {
   return (
-    <div className={styles.container}>
-      <h1>□ を求める計算の練習！</h1>
+<Grid container alignItems={'center'} justifyContent={'center'} direction={'column'} mt={5} spacing={5}>
+
+      <Grid><Typography variant='h2'>□ を求める計算の練習！</Typography></Grid>
+      <Grid mt={5}>
       <Link href="add" passHref>
         <Button variant="contained">足し算</Button>
       </Link>
-    </div>
+      </Grid>
+      </Grid>
   )
 }
