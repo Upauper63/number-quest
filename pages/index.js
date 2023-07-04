@@ -9,7 +9,7 @@ export default function Home() {
       alignItems={"center"}
       justifyContent={"center"}
       direction={"column"}
-      mt={3}
+      mt={1}
       spacing={5}
     >
       <Grid item>
@@ -17,22 +17,22 @@ export default function Home() {
           □ の計算練習！
         </Typography>
       </Grid>
-      <Grid item mt={2}>
+      <Grid item mt={1}>
         <Link href="add" passHref>
           <Button variant="contained">足し算</Button>
         </Link>
       </Grid>
-      <Grid item mt={1}>
+      <Grid item mt={0.5}>
         <Link href="sub" passHref>
           <Button variant="contained">引き算</Button>
         </Link>
       </Grid>
-      <Grid item mt={1}>
+      <Grid item mt={0.5}>
         <Link href="mul" passHref>
           <Button variant="contained">掛け算</Button>
         </Link>
       </Grid>
-      <Grid item mt={1}>
+      <Grid item mt={0.5}>
         <Link href="div" passHref>
           <Button variant="contained">割り算</Button>
         </Link>
