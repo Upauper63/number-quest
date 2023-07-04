@@ -9,7 +9,7 @@ export default function Home() {
       alignItems={"center"}
       justifyContent={"center"}
       direction={"column"}
-      mt={5}
+      mt={3}
       spacing={5}
     >
       <Grid item>
