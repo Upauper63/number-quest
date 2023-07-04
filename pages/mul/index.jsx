@@ -44,6 +44,8 @@ const MulIndex = () => {
         while (num2 == 0) {
           num2 = Math.floor(Math.random() * 100);
         }
+        newQuestions = [...newQuestions, newQuestion];
+        newHidePoses = [...newHidePoses, Math.floor(Math.random() * 2)];
       }
     }
     setQuestions(newQuestions);
