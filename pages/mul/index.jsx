@@ -26,19 +26,27 @@ import {
       let newQuestions = [];
       let newHidePoses = [];
       for (let i = 0; i < 10; i++) {
-        // TODO 2桁位置ランダムにしたい
-        if(i % 2 == 0){
-            let num1 = Math.floor(Math.random() * 100);
-            let num2 = Math.floor(Math.random() * 10);
-            let newQuestion = [num1, num2, num1 * num2];
-            newQuestions = [...newQuestions, newQuestion];
-            newHidePoses = [...newHidePoses, Math.floor(Math.random() * 2)];
-        }else{
-            let num1 = Math.floor(Math.random() * 10);
-            let num2 = Math.floor(Math.random() * 100);            
-            let newQuestion = [num1, num2, num1 * num2];
-            newQuestions = [...newQuestions, newQuestion];
-            newHidePoses = [...newHidePoses, Math.floor(Math.random() * 2)];
+      // TODO 2桁位置ランダムにしたい
+      if (i % 2 == 0) {
+        let num1 = 0;
+        while (num1 == 0) {
+          num1 = Math.floor(Math.random() * 100);
+        }
+        let num2 = 0;
+        while(num2 == 0){
+          num2 = Math.floor(Math.random() * 10);
+        }
+        let newQuestion = [num1 * num2, num1, num2];
+        newQuestions = [...newQuestions, newQuestion];
+        newHidePoses = [...newHidePoses, Math.floor(Math.random() * 2)];
+      } else {
+        let num1 = 0;
+        while (num1 == 0) {
+          num1 = Math.floor(Math.random() * 10);
+        }
+        let num2 = 0;
+        while(num2 == 0){
+          num2 = Math.floor(Math.random() * 100);
         }
       }
       setQuestions(newQuestions);
