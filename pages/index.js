@@ -22,6 +22,21 @@ export default function Home() {
           <Button variant="contained">足し算</Button>
         </Link>
       </Grid>
+      <Grid item mt={1}>
+        <Link href="sub" passHref>
+          <Button variant="contained">引き算</Button>
+        </Link>
+      </Grid>
+      <Grid item mt={1}>
+        <Link href="mul" passHref>
+          <Button variant="contained">掛け算</Button>
+        </Link>
+      </Grid>
+      <Grid item mt={1}>
+        <Link href="div" passHref>
+          <Button variant="contained">割り算</Button>
+        </Link>
+      </Grid>
     </Grid>
   );
 }
