@@ -32,7 +32,7 @@ const MulIndex = () => {
         while (num2 == 0) {
           num2 = Math.floor(Math.random() * 10);
         }
-        let newQuestion = [num1 * num2, num1, num2];
+        let newQuestion = [num1, num2, num1 * num2];
         newQuestions = [...newQuestions, newQuestion];
         newHidePoses = [...newHidePoses, Math.floor(Math.random() * 2)];
       } else {
@@ -44,7 +44,7 @@ const MulIndex = () => {
         while (num2 == 0) {
           num2 = Math.floor(Math.random() * 100);
         }
-        let newQuestion = [num1 * num2, num1, num2];
+        let newQuestion = [num1, num2, num1 * num2];
         newQuestions = [...newQuestions, newQuestion];
         newHidePoses = [...newHidePoses, Math.floor(Math.random() * 2)];
       }
